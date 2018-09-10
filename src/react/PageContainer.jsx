@@ -5,13 +5,25 @@ const projects = [
     imgFullSize: require('../images/portfolio/fullsize/kinder-garten.jpg'),
     imgThumbnail: require('../images/portfolio/thumbnails/kinder-garten.jpg'),
     category: 'Management',
-    name: 'Kinder garten management',
+    name: 'Kinder garten lookup for parents',
+  },
+  {
+    imgFullSize: require('../images/portfolio/fullsize/kinder-garten-management.jpg'),
+    imgThumbnail: require('../images/portfolio/thumbnails/kinder-garten-management.jpg'),
+    category: 'Management',
+    name: 'Kinder garten management for school',
   },
   {
     imgFullSize: require('../images/portfolio/fullsize/check-exam-grade.jpg'),
     imgThumbnail: require('../images/portfolio/thumbnails/check-exam-grade.jpg'),
     category: 'Utilities',
     name: 'Check Exam grade',
+  },
+  {
+    imgFullSize: require('../images/portfolio/fullsize/shopping-search.jpg'),
+    imgThumbnail: require('../images/portfolio/thumbnails/shopping-search.jpg'),
+    category: 'E-commerce',
+    name: 'Online Shopping discount hunt',
   },
 ];
 
@@ -25,7 +37,7 @@ class PageContainer extends React.Component {
       <div id="page-container">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
           <div className="container">
-            <a className="navbar-brand js-scroll-trigger" href="#page-container">Start Bootstrap</a>
+            <a className="navbar-brand js-scroll-trigger" href="#page-container">Digital Builder</a>
             <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -55,13 +67,16 @@ class PageContainer extends React.Component {
             <div className="row">
               <div className="col-lg-10 mx-auto">
                 <h1 className="text-uppercase">
-                  <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+                  <strong>Your favourite source of resolving digital problems.</strong>
                 </h1>
                 <hr />
               </div>
               <div className="col-lg-8 mx-auto">
-                <p className="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap
-                  CSS framework! Just download your template and start going, no strings attached!</p>
+                <p className="text-faded mb-5">
+                  Digital Builder can help you bring your products to the digital world!
+                  <br />
+                  Just send an email or call us and you will have your products online in no time.
+                </p>
                 <a className="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
               </div>
             </div>
@@ -74,9 +89,11 @@ class PageContainer extends React.Component {
               <div className="col-lg-8 mx-auto text-center">
                 <h2 className="section-heading text-white">We've got what you need!</h2>
                 <hr className="light my-4" />
-                <p className="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and
-                  running in no time! All of the templates and themes on Start Bootstrap are open source, free to
-                  download, and easy to use. No strings attached!</p>
+                <p className="text-faded mb-4">
+                  Digital Builder has everything you need to get your new website up and running.
+                  <br />
+                  We have experts in web-development world who can help you designs, create and maintain your website.
+                </p>
                 <a className="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
               </div>
             </div>
@@ -97,29 +114,33 @@ class PageContainer extends React.Component {
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fa fa-4x fa-diamond text-primary mb-3 sr-icons" />
-                  <h3 className="mb-3">Sturdy Templates</h3>
-                  <p className="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+                  <h3 className="mb-3">Experts</h3>
+                  <p className="text-muted mb-0">Our developers are screened properly to ensure that they have proper skills to develop your website.</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons" />
-                  <h3 className="mb-3">Ready to Ship</h3>
-                  <p className="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+                  <h3 className="mb-3">Fast to ship</h3>
+                  <p className="text-muted mb-0">A dashing progress from your idea to an actual website. We can get your website up in no time.</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons" />
-                  <h3 className="mb-3">Up to Date</h3>
-                  <p className="text-muted mb-0">We update dependencies to keep things fresh.</p>
+                  <h3 className="mb-3">Maintenance</h3>
+                  <p className="text-muted mb-0">
+                    We update your website regularly to keep things fresh.
+                  </p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 text-center">
                 <div className="service-box mt-5 mx-auto">
                   <i className="fa fa-4x fa-heart text-primary mb-3 sr-icons" />
                   <h3 className="mb-3">Made with Love</h3>
-                  <p className="text-muted mb-0">You have to make your websites with love these days!</p>
+                  <p className="text-muted mb-0">
+                    All websites managed by us are done with love and great care from our team.
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,106 +167,7 @@ class PageContainer extends React.Component {
                   </a>
                 </div>
               ))}
-
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href={require('../images/portfolio/fullsize/1.jpg')}>
-                  <img className="img-fluid" src={require('../images/portfolio/thumbnails/1.jpg')} alt="" />
-                    <div className="portfolio-box-caption">
-                      <div className="portfolio-box-caption-content">
-                        <div className="project-category text-faded">
-                          Category
-                        </div>
-                        <div className="project-name">
-                          Project Name
-                        </div>
-                      </div>
-                    </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href={require('../images/portfolio/fullsize/2.jpg')}>
-                  <img className="img-fluid" src={require('../images/portfolio/thumbnails/2.jpg')} alt="" />
-                    <div className="portfolio-box-caption">
-                      <div className="portfolio-box-caption-content">
-                        <div className="project-category text-faded">
-                          Category
-                        </div>
-                        <div className="project-name">
-                          Project Name
-                        </div>
-                      </div>
-                    </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href={require('../images/portfolio/fullsize/3.jpg')}>
-                  <img className="img-fluid" src={require('../images/portfolio/thumbnails/3.jpg')} alt="" />
-                    <div className="portfolio-box-caption">
-                      <div className="portfolio-box-caption-content">
-                        <div className="project-category text-faded">
-                          Category
-                        </div>
-                        <div className="project-name">
-                          Project Name
-                        </div>
-                      </div>
-                    </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href={require('../images/portfolio/fullsize/4.jpg')}>
-                  <img className="img-fluid" src={require('../images/portfolio/thumbnails/4.jpg')} alt="" />
-                    <div className="portfolio-box-caption">
-                      <div className="portfolio-box-caption-content">
-                        <div className="project-category text-faded">
-                          Category
-                        </div>
-                        <div className="project-name">
-                          Project Name
-                        </div>
-                      </div>
-                    </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href={require('../images/portfolio/fullsize/5.jpg')}>
-                  <img className="img-fluid" src={require('../images/portfolio/thumbnails/5.jpg')} alt="" />
-                    <div className="portfolio-box-caption">
-                      <div className="portfolio-box-caption-content">
-                        <div className="project-category text-faded">
-                          Category
-                        </div>
-                        <div className="project-name">
-                          Project Name
-                        </div>
-                      </div>
-                    </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a className="portfolio-box" href={require('../images/portfolio/fullsize/6.jpg')}>
-                  <img className="img-fluid" src={require('../images/portfolio/thumbnails/6.jpg')} alt="" />
-                    <div className="portfolio-box-caption">
-                      <div className="portfolio-box-caption-content">
-                        <div className="project-category text-faded">
-                          Category
-                        </div>
-                        <div className="project-name">
-                          Project Name
-                        </div>
-                      </div>
-                    </div>
-                </a>
-              </div>
             </div>
-          </div>
-        </section>
-
-        <section className="bg-dark text-white">
-          <div className="container text-center">
-            <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
-            <a className="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download
-              Now!</a>
           </div>
         </section>
 

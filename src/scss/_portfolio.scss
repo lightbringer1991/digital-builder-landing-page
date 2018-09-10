@@ -7,6 +7,13 @@
   display: block;
   max-width: 650px;
   margin: 0 auto;
+  height: 250px;
+
+  .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+
   .portfolio-box-caption {
     position: absolute;
     bottom: 0;
