@@ -2,7 +2,7 @@
   "name": "digital-builder-landing-page",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "webpack-dev-server --env.dev --watch",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/lightbringer1991/digital-builder-landing-page.git"
   },
-  "author": "",
+  "author": "Tuan Nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lightbringer1991/digital-builder-landing-page/issues"
